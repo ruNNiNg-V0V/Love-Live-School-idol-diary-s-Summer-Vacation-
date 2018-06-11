@@ -1,0 +1,24 @@
+
+public int Count;//private?
+
+public GameObject nameText;
+//둘다 텍스트 타입이 될 수 있나?
+public GameObject sentenceText; 
+
+void ReplaceTextView()
+{
+	for(i = 0; i </*보여져야 하는 대사창의 횟수 만큼*/, i ++;)
+	{
+		if(i = 0)
+		{
+ 		  nameText = GameObject.Fine("NameText");
+			nameText = "니시키노 마키";
+			
+		  sentenceText = GameObject.Fine("SentencText");
+			sentenceText = "어라 설마 늦참, 잤나?"			
+		}
+
+	}
+
+}
+
