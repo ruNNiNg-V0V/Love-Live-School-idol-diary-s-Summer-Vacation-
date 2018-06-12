@@ -1,0 +1,9 @@
+
+*.unity
+*.meta
+Assets/Scenes/Chapter1-1.unity
+Assets/Scenes/Chapter1-1.unity.meta
+Assets/Scenes/Warning.unity
+Assets/Scenes/Warning.unity.meta
+Assets/Script/Click warning scene button method.cs
+Assets/Script/Click warning scene button method.cs.meta
