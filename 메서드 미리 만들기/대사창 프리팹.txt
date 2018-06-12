@@ -22,3 +22,8 @@ void ReplaceTextView()
 
 }
 
+
+ "＼"＼" " // "" 출력
+
+＼t // TAB
+＼n // 줄바꿈

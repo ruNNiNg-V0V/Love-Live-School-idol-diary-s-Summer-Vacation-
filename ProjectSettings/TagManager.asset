@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Button
   - maki
+  - makidemonstrative
+  - makisurprised
+  - makihalfaneye
   layers:
   - Default
   - TransparentFX
