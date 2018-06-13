@@ -15,9 +15,12 @@ public class TurnThePage : MonoBehaviour
     //sentenceText = GameObject.Find("SentenceText");
 
 
-    public GameObject maki;
-    public GameObject makisurprised;
-    public GameObject makidemonstrative;
+    private GameObject maki;
+    private GameObject makisurprised;
+    private GameObject makidemonstrative;
+    private GameObject makireminded;
+
+    private GameObject kitchen;
 
     //public GameObject maki = GameObject.FindWithTag("maki"); 발생시점이 awake보다 먼저이기 때문에 에러가 있던 것
 
@@ -27,6 +30,10 @@ public class TurnThePage : MonoBehaviour
         maki = GameObject.FindWithTag("maki");
         makisurprised = GameObject.FindWithTag("makisurprised");
         makidemonstrative = GameObject.FindWithTag("makidemonstrative");
+        makireminded = GameObject.FindWithTag("makireminded");
+
+        kitchen = GameObject.FindWithTag("Kitchen");
+    
     }
     
     // Update is called once per frame
@@ -66,6 +73,42 @@ public class TurnThePage : MonoBehaviour
                 makidemonstrative.transform.position = new Vector3(0, 0, 2);
                 sentenceText.GetComponent<Text>().text = "뭐야, 아직 이것 밖에 안 됐잖아!";
 
+            }
+            if(count == 5)
+            {
+                maki.transform.position = new Vector3(0, 0, 1);
+                sentenceText.GetComponent<Text>().text = "싫다. 쉬는 날일수록 일찍 일어나다니 \n이러면 꼭 호노카 같잖아!";
+            }
+            if(count == 6)
+            {
+                makisurprised.transform.position = new Vector3(0, 0, 0);
+                sentenceText.GetComponent<Text>().text = "『창가로 다가갔더니 닫혀있는 레이스 커튼이\n 전혀 의미 없을 정도로 새하얗고 강렬한 햇살』";
+            }
+            if(count == 7)
+            {
+                sentenceText.GetComponent<Text>().text = "우와~ 이런 날에 연습하러 나가면\n까맣게 타버릴 거야, 분명!";
+            }
+            if(count == 8)
+            {
+                makireminded.transform.position = new Vector3(0,0,-1);
+                sentenceText.GetComponent<Text>().text = "아, 그러고 보니\n오늘은 연습 없었던가?";
+            }
+            if(count ==9)
+            {
+                sentenceText.GetComponent<Text>().text = "『여름방학 첫날』";
+            }
+            if(count == 10)
+            {
+                sentenceText.GetComponent<Text>().text = "『갑자기 찾아온 ...』";
+            }
+            if(count == 11)
+            {
+                sentenceText.GetComponent<Text>().text = "『아니. 아마도 기다리고 기다리던,\n 개방적인 여름방학 첫째 날은 이렇게 시작되었습니다』";
+            }
+
+            if(count == 12)
+            {
+                kitchen.transform.position = new Vector3(0,0,0);
             }
         }
 

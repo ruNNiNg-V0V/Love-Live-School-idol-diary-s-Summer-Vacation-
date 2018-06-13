@@ -9,6 +9,9 @@ TagManager:
   - makidemonstrative
   - makisurprised
   - makihalfaneye
+  - makireminded
+  - MakiRoom
+  - Kitchen
   layers:
   - Default
   - TransparentFX
